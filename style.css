@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8c0000;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #750000; /* Burgundy */
+    color: #fff;
+}
+
+#audio-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#audio-container audio {
+    width: 80%;
+}
+
+#video-container {
+    text-align: center;
+}
+
+.video-frame {
+    overflow: hidden;
+    width: 40%;
+    margin: 20px auto;
+    border: 5px solid white;
+}
+
+#video-container video {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.medium-image {
+    width: 20%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+#image-container img:first-child {
+    width: 80%;
+    order: 3;
+}
+
+#bottom-text {
+    text-align: center;
+    
+    color: white; /* Adăugat pentru culoarea textului */
+}
+
+.message-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.message-container p {
+    text-align: center;
+    margin: 10px auto 40px; /* Adaugat un margin mai mare jos */
+    max-width: 60%;
+}
+
+/* Animare la accesarea paginii */
+body, #image-container img, .message-container {
+    animation: fadeInUp 5s forwards;
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

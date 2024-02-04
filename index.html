@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>You'll Never Walk Alone</title>
+</head>
+<body>
+    <header>
+        <h1>You Will Never Walk Alone</h1>
+    </header>
+    <section id="container">
+        <div id="image-container">
+            <img src="image1.jpg" alt="Image 1" class="medium-image">
+            <img src="image5.jpg" alt="Image 2" class="medium-image">
+            <img src="3.jpg" alt="Image 3" class="medium-image">
+        </div>
+        <div id="audio-container">
+            <audio id="ynwaSound" controls>
+                <source src="sunet.mp3" type="audio/mp3"> start='4'>
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        <div id="video-container">
+            <div class="video-frame">
+                <video id="ynwaVideo" controls autoplay>
+                    <source src="clip.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div id="bottom-text" class="message-container">
+            <p>"It was not too bad so far, let’s try to make it even better in the future."</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
